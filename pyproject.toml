@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "thonny-unittest"
+version = "1.0.0"
+description = "Adds a command to run unit tests in the current working directory to the Thonny IDE."
+authors = ["Uitgeverij Instruct <fundament@instruct.nl>"]
+readme = "README.md"
+packages = [{include = "thonnycontrib"}]
+
+[tool.poetry.dependencies]
+thonny = "^4.1"
+python = "^3.8"
+
+[build-system]
+required = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
